@@ -1,0 +1,167 @@
+/* FONT */
+
+@font-face {
+	font-family: Capriola;
+	src: url(../fonts/capriola-regular.ttf);
+}
+
+@font-face {
+	font-family: Poppins Light;
+	src: url(../fonts/poppins-light.ttf);
+}
+
+/* BODY */
+
+body {
+	background: #000 url(../img/bgkesha.jpg) no-repeat fixed right bottom;
+   	background-size: contain;
+
+}
+
+/* COLORS */
+
+.red, #nav a.red:hover {
+	color: #eb4444;
+}
+
+.orangered, #nav a.orangered:hover  {
+	color: #eb7b44;
+}
+
+.orange, #nav a.orange:hover {
+	color: #eb9b44;
+}
+
+.orangeyellow, #nav a.orangeyellow:hover {
+	color: #ebc244;
+}
+
+.yellow, #nav a.yellow:hover {
+	color: #ebe544;
+}
+
+.yellowgreen, #nav a.yellowgreen:hover{
+	color: #c6eb44;
+}
+
+.green, #nav a.green:hover {
+	color: #87eb44;
+}
+
+.greenblue, #nav a.greenblue:hover {
+	color: #44eb87;
+}
+
+.blue, #nav a.blue:hover {
+	color: #44ebd5;
+}
+
+.blueindigo, #nav a.blueindigo:hover {
+	color: #44a2eb;
+}
+
+.indigoviolet, #nav a.indigoviolet:hover {
+	color: #4450eb;
+}
+
+.violet, #nav a.violet:hover {
+	color: #6444eb;
+}
+
+.violetpink, #nav a.violetpink:hover {
+	color: #8744eb;
+}
+
+.redpink, #nav a.redpink:hover {
+	color: #c244eb;
+}
+
+/* NAV */
+
+#nav {
+	position: fixed;
+	top: 145px;
+	left: 15px;
+	width: 150px;
+	font: 10pt Capriola;
+	color: rgb(238, 238, 238);
+	text-align: center;
+	z-index: 1;
+}
+
+#nav td {
+	width: 150px;
+	display: block;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#nav a {
+	text-decoration: none;
+	color: #eee;
+	transition: 0.5s;
+}
+
+/* MAINCONTENT */
+
+#maincontent {
+	margin-left: 195px;
+	font: 12pt poppins light;
+	width: 40%;
+	color: #eee;
+	text-align: center;
+}
+
+
+#maincontent h1 {
+	font: 20pt Capriola;
+}
+
+#maincontent h2 {
+	font: 10pt Capriola;
+	color: Silver;
+}
+
+/* LOGO */
+
+#logo {
+	position: fixed;
+	top: 20px;
+	left: 10px;
+	width: 150px;
+	height: 150px;
+	background: url(../img/logo.png) no-repeat;
+	background-size: contain;
+}
+
+/* ALBUMCOVER */
+
+#albumcover {
+	position: fixed;
+	bottom: 20px;
+	left: 30px;
+	width: 125px;
+	height: 125px;
+	background: url(../img/rainbow.jpg) no-repeat;
+	background-size: contain;
+}
+
+#albumcover:hover .if {
+    display: block;
+}
+
+/* IFRAME */
+
+.if {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    max-width: 125px;
+    height: 125px;
+    margin-left: 125px;
+    border-left: 25px solid #000;
+}
+
+.if iframe {
+	border: none;
+}
