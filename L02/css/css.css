@@ -1,0 +1,178 @@
+/* FONTFACE */
+
+@font-face {
+	font-family: Lato;
+	src: url(../fonts/lato-regular.ttf);
+}
+
+@font-face {
+	font-family: Lato Black;
+	src: url(../fonts/lato-black.ttf);
+}
+
+@font-face {
+	font-family: Lato Light;
+	src: url(../fonts/lato-light.ttf);
+}
+
+@font-face {
+	font-family: Lato Bold;
+	src: url(../fonts/lato-bold.ttf);
+}
+
+@font-face {
+	font-family: Lato Hairline;
+	src: url(../fonts/lato-hairline.ttf);
+}
+
+@font-face {
+	font-family: Philosopher;
+	src: url(../fonts/philosopher-regular.ttf);
+}
+
+@font-face {
+	font-family: Philosopher Italic;
+	src: url(../fonts/philosopher-italic.ttf);
+}
+
+
+/* BODY */
+
+body {
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding:0;
+	background-color: #1e2326;
+}
+
+/* HEADER */
+
+#a {
+	width: 100%;
+	height: 100%;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 10px;
+	font: 24pt Lato Light;
+	margin: 250px 0 250px 0;
+	color:  #958d83;
+	padding: 0;
+}
+
+/* NAV */
+
+nav {
+	text-align: center;
+}
+
+nav a {
+	margin: 0 8px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #e8e6e3;
+	font: 10pt Lato Light;
+	font-weight: 100;
+	word-spacing: 1px;
+
+}
+
+nav a:hover {
+	transition: 0.5s;
+	color: #958d83;
+}
+
+
+/* MAINCONTENT */
+
+#maincontent {
+	width: 45%;
+	margin: 0 auto;
+}
+
+/* ARTICLE */
+
+article {
+	margin: 50px 0;
+	text-align: left;
+	font: 12pt Philosopher;
+	word-spacing: 0px;
+	letter-spacing: 0px;
+	color: #e8e6e3;
+}
+
+article i {
+	font-family: Philosopher Italic;
+	text-style: none;
+}
+
+article header {
+	background-color: #605a52;
+	padding: 25px;
+	margin-bottom: 20px;
+}
+
+article h1 {
+	text-transform: uppercase;
+	text-align: center;
+	font: 12pt Lato Black;
+	color: 	#e8e6e3;
+	letter-spacing: 2px;
+	word-spacing: 3px;
+}
+
+article h2 {
+	text-transform: uppercase;
+	text-align: center;
+	font: 10pt Lato Black;
+	color: #f4f3f1;
+	letter-spacing: 2px;
+	word-spacing: 3px;
+	margin-top: 20px;
+}
+
+article ul li {
+	display: inline;
+	list-style-type: none;
+}
+
+article .credit {
+
+	font-size: 9pt;
+	color: #958d83;
+}
+
+article .credit a {
+	text-decoration: none;
+	color: #ada69f;
+}
+
+/* FORM */
+
+input {
+	background: none;
+	border: none;
+	border-bottom: 3px solid #605a52;
+	color: #f4f3f1;
+	font: 10pt Lato;
+	font-weight: 200;
+	margin-bottom: 20px;
+	height: 25px;
+	width: 200px;
+	outline: none;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	width: 35px;
+	margin-left: 30px;
+}
+
+input[type="submit"] {
+	text-transform: uppercase;
+	color: #e8e6e3;
+	font: 10pt Lato;
+	font-weight: 200;
+	padding: 10px;
+	background-color:#38342e;
+	height: 50px;
+}
