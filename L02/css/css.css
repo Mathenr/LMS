@@ -101,9 +101,9 @@ article {
 	color: #e8e6e3;
 }
 
-article i {
+article i, section i {
 	font-family: Philosopher Italic;
-	text-style: none;
+	font-style: none;
 }
 
 article header {
