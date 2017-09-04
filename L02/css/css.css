@@ -101,11 +101,6 @@ article {
 	color: #e8e6e3;
 }
 
-article i, section i {
-	font-family: Philosopher Italic;
-	font-style: normal;
-}
-
 article header {
 	background-color: #605a52;
 	padding: 25px;
