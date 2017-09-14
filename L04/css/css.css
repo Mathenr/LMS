@@ -1,0 +1,144 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* FONTFACE */
+
+@font-face {
+	font-family: Lato;
+	src: url(../fonts/lato-regular.woff) format('woff');
+}
+
+@font-face {
+	font-family: Lato Black;
+	src: url(../fonts/lato-black.woff) format('woff');
+}
+
+@font-face {
+	font-family: Lato Light;
+	src: url(../fonts/lato-light.woff) format('woff');
+}
+
+/* BODY */
+
+body {
+	background-color: #eee;
+}
+
+/* HEADER */
+
+header {
+	max-width: 100%;
+	height: 40px;
+	background-color: #333;
+	padding-top: 40px;
+	color: #fff;
+}
+
+#title {
+	float: left;
+	padding-left: 20px;
+	font: 20pt Lato Black;
+	letter-spacing: 4pt;
+}
+
+#subtitle {
+	float: right;
+	padding: 10px 20px 0 0;
+	font: 12pt Lato Light;
+	letter-spacing: 2pt;
+	text-transform: uppercase;
+	color: #eee;
+}
+
+/* NAV */
+
+nav#hor {
+	max-width: 100%;
+	background-color: #ccc;
+	padding: 25px 0 0 20px;
+	height: 40px;
+	text-transform: uppercase;
+	font: 10pt Lato;
+	color: #333;
+}
+
+nav#ver {
+	background-color: #444;
+	width: 20%;
+	padding: 20px 0 20px 20px;
+	font: 12pt Lato;
+	color:#eee;
+}
+
+nav#ver a {
+	text-decoration: none;
+	color: #ddd;
+	transition: 1s;
+}
+
+nav#ver a:hover {
+	color: #aaa;
+
+}
+
+nav#ver h1 {
+	font: 12pt Lato Black;
+	margin-bottom: 10px;
+}
+
+/* CLASSES */
+
+/* header */
+
+.ts1 {
+	color: #bbb;
+}
+
+.ts2 {
+	color: #eee;
+}
+
+/* dropdown */
+
+.dp {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+
+}
+
+.dpc {
+	background-color: #f9f9f9;
+	opacity: 0.8;
+    display: none;
+    position: absolute;
+    min-width: 30px;
+    padding: 15px;
+    text-align: center;
+    z-index: 1;
+
+}
+
+.dp:hover .dpc {
+    display: block;
+}
