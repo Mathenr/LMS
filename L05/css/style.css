@@ -1,0 +1,155 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+/* BODY */
+
+body {
+	background-color: #AEB1B5; 
+	overflow-x: hidden;
+	font-family: sans-serif;
+}
+
+/* HEADER */
+
+.header {
+	width: 100%;
+	height: 80px;
+	padding: 0 25px;
+	background-color: #0C71B2;
+}
+
+.logo {
+	line-height: 80px !important;
+	font: 1.5em sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #FF4544;
+}
+
+/* NAV */
+
+.nav {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    background-color: #B2B115;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.nav a {
+	padding: 5px 5px 5px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FF5244;
+    display: block;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #fff;
+}
+
+#content {
+    transition: margin-left .5s;
+    padding: 25px;
+    position: relative;
+    left: 250px;
+    width: 75%;
+}
+
+.g {
+	visibility: hidden;
+	margin-top: 0px;
+}
+
+.gg {
+	cursor: pointer;
+	visibility: hidden;
+}
+
+@media screen and (max-width: 480px) {
+	.nav {
+		width: 0px;
+	}
+
+	.g {
+		visibility: visible;
+	}
+
+	#content {
+		left: 0;
+	}
+
+  }
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ccc;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
