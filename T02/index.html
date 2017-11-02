@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title> Trabalho 02 - Mateus Henrique</title>
+
+	<meta charset = "UTF-8" />
+	<link rel = "stylesheet" href = "css/style.css" />
+	<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+	
+	<div id = "wrapper">
+
+		<header class = "header">
+
+			<div class = "title"> </div>
+
+			<div class = "login-button"> 
+				<a href = "/"> Entrar </a>
+			</div>
+			
+		</header>
+
+		<div class = "contactlist">
+
+		<!-- Via Javascript -->
+
+		</div>
+
+		<div class = "content">
+
+		<!-- Como deve ficar a estrutura -->
+
+			<div class = "message-user">
+				Lorem ipsum dolor sit amet. :) 
+
+				<span class = "author-user"> Lorena 
+					<span class = "fa fa-check check-icon"></span> 
+
+				</span>
+
+			</div>
+
+			<div class = "message-contact">
+				Repellendus tempore dolorem sapiente at! Expedita? 
+
+				<span class = "author-contact">
+					<span class = "fa fa-check check-icon"> </span>
+
+					Loremo
+				</span>
+
+			</div>
+
+			<div class = "message-user">
+				Lorem ipsum dolor sit amet. :) 
+
+				<span class = "author-user"> Lorena 
+					<span class = "fa fa-check check-icon"></span> 
+
+				</span>
+
+			</div>
+
+			<div class = "message-contact">
+				Repellendus tempore dolorem sapiente at! Expedita? 
+
+				<span class = "author-contact">
+					<span class = "fa fa-check check-icon"> </span>
+
+					Loremo
+				</span>
+
+			</div>
+
+		</div>
+		<div class = "writemessage">
+			<form action = "">
+				<input id = "message" type = "text" class = "message-input">
+				<input id = "sendMessage" class = "sendmessage" type = "submit" value = "&#xf1d8;"> 
+			</form>
+		</div>
+
+		<script>
+
+			let content = document.querySelector(".content");
+			let contactList = document.querySelector(".contactlist");
+			let span = document.createElement("span");
+			span.className = "fa fa-user-circle contact-icon";
+			let checkIcon = document.createElement("span");
+			checkIcon.className = "fa fa-check check-icon";
+
+			/* João */
+
+			let contactJoao = document.createElement("a");
+
+			let Joao = document.createTextNode("João");
+
+			contactJoao.appendChild(span.cloneNode(true));
+			contactJoao.appendChild(Joao);
+
+			contactJoao.href = "#void";
+
+			/* José */
+
+			let contactJose = document.createElement("a");
+
+			let Jose = document.createTextNode("José"); /* usa + para varios elementos */
+
+			contactJose.appendChild(span.cloneNode(true));
+			contactJose.appendChild(Jose);
+
+			contactJose.href = "#void";
+
+			/* */
+
+			contactList.appendChild(contactJoao);
+			contactList.appendChild(contactJose); 
+
+			/* calling the functons */
+
+			contactJoao.onclick = function () {
+				showJoaoMessages();
+			};
+
+			contactJose.onclick = function () {
+				showJoseMessages();
+			};
+
+			/* functions */
+
+			function showJoaoMessages() { 
+
+				/* usar JSON */
+
+				content.innerHTML = "";
+
+				let messageUser = document.createElement("div");
+				messageUser.className = "message-user";
+
+				let userText = document.createTextNode("Ei, guri! Tudo bem?");
+				let userAuthor = document.createElement("span");
+				userAuthor.className = "author-user";
+
+				let userAuthorText = document.createTextNode("Você ");
+
+				userAuthor.appendChild(userAuthorText);
+				userAuthor.appendChild(checkIcon);
+
+				messageUser.appendChild(userText);
+				messageUser.appendChild(userAuthor);
+				content.appendChild(messageUser);
+
+			};
+
+			function showJoseMessages() {
+				alert('josé');
+			};
+
+
+		</script>
+
+	</body>
+</html>
