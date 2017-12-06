@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title> Trabalho 03 - Mateus Henrique</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+</head>
+<body style = "background-color: #eee;">
+
+	<!-- Dropdown Structure -->
+	<ul id="dropdown1" class="dropdown-content" style='padding: 15px !important; margin-left: -50px;'> <span id = "cart" class="black-text text-darken-2">
+		<button class="btn waves-effect waves-light" type="submit">Comprar</button>
+	</span></ul>
+	<nav>
+		<div class="nav-wrapper teal lighten-2" style = "padding: 0 15px;">
+			<a href="#!" class="brand-logo">Loja Mofada</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons right">shopping_cart</i><i class="material-icons right">arrow_drop_down</i></a></li>
+			</ul>
+		</div>
+	</nav>
+
+	Infelizmente, deu ruim! :(
+
+	<script>
+
+	console.log("preço:" + JSON.parse((localStorage.getItem(cart)))[0].price);
+
+	</script>
+
+
+</body>
+
+</html>
